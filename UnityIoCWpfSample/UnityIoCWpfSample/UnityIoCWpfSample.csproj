@@ -74,6 +74,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\TableItemModel.cs" />
     <Compile Include="UI\UICore\DelegateCommands\CommandFactory.cs" />
     <Compile Include="UI\UICore\DelegateCommands\DelegateCommand.cs" />
     <Compile Include="UI\UICore\DelegateCommands\Generic\DelegateCommand.cs" />
@@ -83,6 +84,9 @@
     <Compile Include="UI\Views\BaseView\BaseViewModel.cs" />
     <Compile Include="UI\Views\BaseView\IView.cs" />
     <Compile Include="UI\Views\BaseView\IViewModel.cs" />
+    <Compile Include="UI\Views\TreeListViewTable\CustomConverters\LevelToIndentConverter.cs" />
+    <Compile Include="UI\Views\TreeListViewTable\CustomControls\TreeListView.cs" />
+    <Compile Include="UI\Views\TreeListViewTable\CustomControls\TreeListViewItem.cs" />
     <Compile Include="UI\Views\TreeListViewTable\ITreeListView.cs" />
     <Compile Include="UI\Views\TreeListViewTable\ITreeListViewModel.cs" />
     <Compile Include="UI\Views\TreeListViewTable\TreeListView.xaml.cs">

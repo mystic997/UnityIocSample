@@ -1,10 +1,13 @@
-﻿using System.Windows;
+﻿using System.ComponentModel;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace UnityIoCWpfSample.UI.Views.TreeListViewTable.CustomControls
 {
     public class TreeListViewItem : TreeViewItem
     {
+        public object Content { get; set; }
+
         private int _level = -1;
 
         public int Level
