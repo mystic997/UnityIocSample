@@ -83,6 +83,12 @@
     <Compile Include="UI\Views\BaseView\BaseViewModel.cs" />
     <Compile Include="UI\Views\BaseView\IView.cs" />
     <Compile Include="UI\Views\BaseView\IViewModel.cs" />
+    <Compile Include="UI\Views\TreeListViewTable\ITreeListView.cs" />
+    <Compile Include="UI\Views\TreeListViewTable\ITreeListViewModel.cs" />
+    <Compile Include="UI\Views\TreeListViewTable\TreeListView.xaml.cs">
+      <DependentUpon>TreeListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Views\TreeListViewTable\TreeListViewModel.cs" />
     <Compile Include="UI\Windows\BaseWindow\BaseWindowViewModel.cs" />
     <Compile Include="UI\Windows\BaseWindow\IWindow.cs" />
     <Compile Include="UI\Windows\BaseWindow\IWindowViewModel.cs" />
@@ -123,6 +129,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="UI\Views\TreeListViewTable\TreeListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\Windows\MainWindow\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

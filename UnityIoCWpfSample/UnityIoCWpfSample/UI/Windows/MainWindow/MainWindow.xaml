@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TreeListViewWithUnity.UI.Windows.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <UserControl Content="{Binding TreeListViewModel.View}"></UserControl>
+    </DockPanel>
 </Window>

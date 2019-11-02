@@ -1,6 +1,7 @@
 ﻿using TreeListViewWithUnity.UI.UICore.DelegateCommands;
 using TreeListViewWithUnity.UI.Windows.MainWindow;
 using Unity;
+using UnityIoCWpfSample.UI.Views.TreeListViewTable;
 
 namespace TreeListViewWithUnity.Core.ContainerBootstrapper
 {
@@ -37,6 +38,9 @@ namespace TreeListViewWithUnity.Core.ContainerBootstrapper
 
         private static IUnityContainer InitialiseViews(IUnityContainer container)
         {
+            container.RegisterType<ITreeListView, TreeListView>();
+            container.RegisterType<ITreeListViewModel, TreeListViewModel>();
+
             return container;
         }
 
