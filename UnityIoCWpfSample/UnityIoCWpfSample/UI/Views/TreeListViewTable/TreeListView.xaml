@@ -63,7 +63,7 @@
             </Setter>
         </Style>
 
-        <DataTemplate x:Key="CellTemplate_Name">
+        <DataTemplate x:Key="HierarchicColumn">
             <DockPanel>
                 <ToggleButton x:Name="Expander" 
                               Style="{StaticResource ExpandCollapseToggleStyle}" 
@@ -86,10 +86,9 @@
             </DataTemplate.Triggers>
         </DataTemplate>
         
-        <GridViewColumnCollection x:Name="gvccName"
-                                  x:Key="gvcc">
+        <GridViewColumnCollection x:Key="gvcc">
             <GridViewColumn Header="Title" 
-                            CellTemplate="{StaticResource CellTemplate_Name}"
+                            CellTemplate="{StaticResource HierarchicColumn}"
                             Width="250" />
             <GridViewColumn Header="Description"
                             DisplayMemberBinding="{Binding Text}"
