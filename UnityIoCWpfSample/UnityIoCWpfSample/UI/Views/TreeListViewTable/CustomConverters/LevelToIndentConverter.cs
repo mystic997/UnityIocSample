@@ -7,7 +7,7 @@ namespace UnityIoCWpfSample.UI.Views.TreeListViewTable.CustomConverters
 {
     public class LevelToIndentConverter : IValueConverter
     {
-        private const double INDENT_SIZE = 8.0;
+        private const double INDENT_SIZE = 12.0;
 
         public object Convert(object o, Type type, object parameter, CultureInfo culture)
         {

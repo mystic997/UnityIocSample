@@ -89,11 +89,13 @@
         <GridViewColumnCollection x:Name="gvccName"
                                   x:Key="gvcc">
             <GridViewColumn Header="Title" 
-                            CellTemplate="{StaticResource CellTemplate_Name}" />
+                            CellTemplate="{StaticResource CellTemplate_Name}"
+                            Width="250" />
             <GridViewColumn Header="Description"
                             DisplayMemberBinding="{Binding Text}"
-                            Width="60" />
-            <GridViewColumn Header="IsEnabled">
+                            Width="200" />
+            <GridViewColumn Header="IsEnabled"
+                            Width="60">
                 <GridViewColumn.CellTemplate>
                     <DataTemplate>
                         <CheckBox HorizontalAlignment="Center"
